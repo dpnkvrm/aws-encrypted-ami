@@ -57,6 +57,7 @@ It will create a amazon2 instance with encrypted root volume and will create an 
 Once the AMI is complete it will terminate the base instance and will provide you the AMI ID to be used for your builds.
 
 --- Cheers !!
+
 -- Deepank Verma
 
 
