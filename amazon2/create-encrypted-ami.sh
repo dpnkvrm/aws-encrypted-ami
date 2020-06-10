@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Rackspace Account Number:"
+echo "Rack Account Number:"
 read rackaccount
 echo "AWS Account Number:"
 read awsaccount
