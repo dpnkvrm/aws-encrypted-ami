@@ -1,6 +1,6 @@
 # Runbook for Creating Ami with encrypted root volume
 ## Problem Statement:
-- Unable to use rackspace ec2_ar or ec2_asg module to create an instance with encrypted root volume.
+- Unable to use our ec2_ar or ec2_asg module to create an instance with encrypted root volume.
 
 
 ## Process used currently (Manual Process): 
