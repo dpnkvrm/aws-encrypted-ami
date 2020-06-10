@@ -1,4 +1,4 @@
-# Runbook for Creating Ami with encrypted root volume in rackspce
+# Runbook for Creating Ami with encrypted root volume
 ## Problem Statement:
 - Unable to use rackspace ec2_ar or ec2_asg module to create an instance with encrypted root volume.
 
@@ -12,7 +12,7 @@
     - Create instances using this encrypted ami.
 
 # Solutions: 
-### 1. Terraform provided solution proposed to be used in rackspace modules: 
+### 1. Terraform provided solution proposed to be used in already used modules: 
 ```
 resource "aws_instance" "example" {
   ami = "ami-00000000000000000"
@@ -42,15 +42,15 @@ chmod a+x create-encrypted-ami.sh
 ```
 ./create-encrypted-ami.sh
 ```
-4) Provide rackspace account number, aws account number and region to be used:
+4) Provide account details and region to be used:
 ```
 ./create-encrypted-ami.sh 
-Rackspace Account Number:
-981064
+<Company> Account Number:
+XXXXX
 AWS Account Number:
-805405598173
+XXXXXXXXXXXXX
 region:
-eu-west-1
+xx-xxxx-x
 ```
 ### Thats it!!! 
 It will create a amazon2 instance with encrypted root volume and will create an AMI with appropriate tags. 
